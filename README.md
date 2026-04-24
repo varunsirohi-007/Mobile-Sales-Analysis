@@ -1,55 +1,58 @@
-📊 Mobile Sales Analysis (Power BI)
+# 📊 Mobile Sales Analysis (Power BI)
 
-📌 Project Overview
+## 📌 Project Overview
 
-This project showcases an interactive **Mobile Sales Dashboard** built entirely in **Power BI**. It provides a comprehensive view of sales performance, customer insights, product trends, and payment behaviors using dynamic and visually rich reports.
+This project presents an interactive **Mobile Sales Dashboard** built using **Power BI**. It transforms raw sales data into meaningful insights, helping analyze sales performance, customer behavior, product trends, and payment patterns through visually rich reports.
 
-🛠️ Tool Used
 
-* Power BI (Data Modeling, Visualization, Dashboard Design)
+## 🛠️ Tools & Technologies
 
-📂 Dataset Description
+* **Power BI** – Data Modeling, Visualization, Dashboard Design
+* **DAX (Data Analysis Expressions)** – Measures and Calculations
 
-The dataset contains mobile sales transaction data with the following fields:
 
-* Transaction ID – Unique identifier for each transaction
-* Day, Month, Year, Day Name – Time-based attributes
-* Brand – Mobile brand (e.g., Apple, Samsung, Xiaomi)
-* Mobile Model – Specific phone model
-* Units Sold – Number of units sold
-* Price Per Unit – Price of each unit
-* Customer Name – Name of the customer
-* Customer Age – Age of the customer
-* City – Customer location
-* Payment Method – UPI, Cash, Credit Card, Debit Card
-* Customer Ratings – Rating given by the customer
+## 📂 Dataset Description
 
-⚙️ Data Modeling & Measures
+The dataset contains mobile sales transaction data with the following attributes:
 
-Data was modeled within Power BI using calculated columns and measures.
+* **Transaction ID** – Unique identifier for each transaction
+* **Date Fields** – Day, Month, Year, Day Name
+* **Brand** – Mobile brands (Apple, Samsung, Xiaomi, etc.)
+* **Mobile Model** – Specific phone model
+* **Units Sold** – Number of units sold
+* **Price Per Unit** – Selling price
+* **Customer Name** – Customer identity
+* **Customer Age** – Age group analysis
+* **City** – Customer location
+* **Payment Method** – UPI, Cash, Credit Card, Debit Card
+* **Customer Ratings** – Feedback score (1–5)
 
-Example measure:
 
-DAX id="a8v2k1"
+## ⚙️ Data Modeling & DAX Measures
+
+### Example Measure:
+
+```DAX
 Total Sales = SUMX(Sales_Data, Sales_Data[Units Sold] * Sales_Data[Price Per Unit])
+```
 
+### Other Key Measures:
 
-Other key calculations:
-
-* Total Quantity
+* Total Quantity Sold
 * Total Transactions
 * Average Sales Value
 
-📈 Dashboard Features
 
-🔑 KPI Cards
+## 📈 Dashboard Features
 
-* Total Sales: 769M
-* Total Quantity Sold: 19K
-* Total Transactions: 4K
-* Average Sales Value: 40K
+### 🔑 KPI Cards
 
-📊 Visualizations
+* **Total Sales:** 769M
+* **Total Quantity Sold:** 19K
+* **Total Transactions:** 4K
+* **Average Sales Value:** 40K
+
+### 📊 Visualizations
 
 * Sales Trend by Month (Line Chart)
 * Sales by Day Name
@@ -59,7 +62,7 @@ Other key calculations:
 * Customer Ratings Distribution
 * Sales by City
 
-🎛️ Filters / Slicers
+### 🎛️ Filters / Slicers
 
 * Mobile Model
 * Brand
@@ -67,28 +70,30 @@ Other key calculations:
 * Day Name
 * Month Selection
 
-🔍 Key Insights
+## 🔍 Key Insights
 
-* Sales show fluctuations across months with noticeable peaks
-* Top mobile models contribute significantly to total revenue
+* Sales fluctuate across different months with noticeable peaks
+* Top-performing mobile models contribute the majority of revenue
 * Payment methods are evenly distributed among customers
 * Customer ratings are mostly positive (4–5 range)
-* Sales performance varies by city
+* Sales performance varies across cities
 
-🎯 Key Learnings
+## 🎯 Key Learnings
 
 * Building interactive dashboards in Power BI
 * Creating DAX measures and calculated columns
 * Designing user-friendly layouts with slicers and KPIs
-* Turning raw data into meaningful business insights
+* Converting raw data into actionable business insights
 
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 
-* Add forecasting for sales trends
-* Create drill-through reports for detailed analysis
-* Enhance UI/UX with advanced visuals and tooltips
-* Include additional KPIs like growth rate and segmentation
+* Add sales forecasting
+* Implement drill-through reports
+* Improve UI/UX with advanced visuals
+* Include KPIs like growth rate and customer segmentation
 
-👤 Author
+## 👤 Author
 
-Varun Sirohi
+**Varun Sirohi**
+
+
